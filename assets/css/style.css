@@ -42,6 +42,7 @@ a {
     background: #171100;
 }
 .btn:hover{
+    background-color: #fea31b;
     cursor: pointer;
     opacity: 0.9;
 }
@@ -52,7 +53,19 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-/* ========================================= */
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp,1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp.line-2{
+    --line-clamp:2;
+}
+.break-all{
+    word-break: break-all;
+}
+/* ==================header======================= */
 .header {
     background-color: #fffcf4;
 }
@@ -108,6 +121,7 @@ a {
 /* từ 92 đổ lên là code riêng cho phần header xem cho kĩ để dễ nhớ hơn */
 
 /* từ 94 đổ xuống là code cho phần hero( phân thân bài của web)  */
+/* ================hero============================================= */
 .hero{
     padding: 56px 0 65px;
     background-color: #fffcf4;
@@ -321,6 +335,7 @@ a {
 }
 
 .popular .course-item{
+    Flex: 1;
     border-radius: 12px;
     border: 1px solid #e2dfda;
     background: #FFF;
